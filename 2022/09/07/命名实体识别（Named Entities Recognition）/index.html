@@ -10,17 +10,20 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-    
-    <!-- <meta name="keywords" content="">
-    <meta name="description" content=""> -->
-  
-  <meta property="og:type" content="website">
+  <meta name="description" content="命名实体识别（Named Entities Recognition）1、概念 **命名实体:**人名、机构名、地名等其他所有以名称为标识的实体，通常是名词。       序列标注模式：  BIO标注模式: (B-begin，I-inside，O-outside)  BIOES标注模式: (B-begin，I-inside，O-outside，E-end，S-single)  BMES标注模式: (">
+<meta property="og:type" content="article">
 <meta property="og:title" content="blue">
-<meta property="og:url" content="https://zuizaijiuxianghe.github.io/index.html">
+<meta property="og:url" content="https://zuizaijiuxianghe.github.io/2022/09/07/%E5%91%BD%E5%90%8D%E5%AE%9E%E4%BD%93%E8%AF%86%E5%88%AB%EF%BC%88Named%20Entities%20Recognition%EF%BC%89/index.html">
 <meta property="og:site_name" content="blue">
+<meta property="og:description" content="命名实体识别（Named Entities Recognition）1、概念 **命名实体:**人名、机构名、地名等其他所有以名称为标识的实体，通常是名词。       序列标注模式：  BIO标注模式: (B-begin，I-inside，O-outside)  BIOES标注模式: (B-begin，I-inside，O-outside，E-end，S-single)  BMES标注模式: (">
 <meta property="og:locale">
+<meta property="og:image" content="c:/Users/刘志远/AppData/Roaming/Typora/typora-user-images/image-20220905121929970.png">
+<meta property="og:image" content="c:/Users/刘志远/AppData/Roaming/Typora/typora-user-images/image-20220905125107167.png">
+<meta property="article:published_time" content="2022-09-07T00:35:16.414Z">
+<meta property="article:modified_time" content="2022-09-05T05:02:38.877Z">
 <meta property="article:author" content="醉在九乡河">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:/Users/刘志远/AppData/Roaming/Typora/typora-user-images/image-20220905121929970.png">
   
     <link rel="alternative" href="/atom.xml" title="blue" type="application/atom+xml">
   
@@ -163,10 +166,7 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-
-  
-    <article id="post-命名实体识别（Named Entities Recognition）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-命名实体识别（Named Entities Recognition）" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
   <div class="article-entry" itemprop="articleBody">
@@ -226,6 +226,26 @@
     
 
     
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          醉在九乡河
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="https://zuizaijiuxianghe.github.io/2022/09/07/命名实体识别（Named Entities Recognition）/" title="" target="_blank">https://zuizaijiuxianghe.github.io/2022/09/07/命名实体识别（Named Entities Recognition）/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
 
   </div>
   <div class="article-info article-info-index">
@@ -234,16 +254,24 @@
     
 
     
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2022/09/07/%E5%91%BD%E5%90%8D%E5%AE%9E%E4%BD%93%E8%AF%86%E5%88%AB%EF%BC%88Named%20Entities%20Recognition%EF%BC%89/">展开全文 >></a>
-    </p>
-    
 
     
     <div class="clearfix"></div>
   </div>
   </div>
 </article>
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2022/09/07/SQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B03%E2%80%94%E2%80%94%E8%A1%8C%E5%88%97%E6%80%A7%E8%B4%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -264,415 +292,14 @@
 
 
 
-  
-    <article id="post-SQL学习笔记3——行列性质" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="SQL学习笔记3——行列操作"><a href="#SQL学习笔记3——行列操作" class="headerlink" title="SQL学习笔记3——行列操作"></a>SQL学习笔记3——行列操作</h1><h2 id="1、表的操作"><a href="#1、表的操作" class="headerlink" title="1、表的操作"></a>1、表的操作</h2><h2 id="2、列的操作"><a href="#2、列的操作" class="headerlink" title="2、列的操作"></a>2、列的操作</h2><h2 id=""><a href="#" class="headerlink" title="- "></a>- </h2><h2 id="3、行的操作"><a href="#3、行的操作" class="headerlink" title="3、行的操作"></a>3、行的操作</h2><ul>
-<li><p><strong>插入单行</strong></p>
-<p>​	INSERT INTO table</p>
-<p>​	VALUES()  –插入的值用，分隔开来</p>
-</li>
-<li><p><strong>插入多行</strong></p>
-<p>​	INSERT INTO table</p>
-<p>​	VALUES()，</p>
-<p>​		  ()，</p>
-<p>​		  ()       –插入的值用，分隔开来；插入的括号行也用，  					 分隔</p>
-</li>
-<li><p>的</p>
-</li>
-<li><p>的</p>
-</li>
-</ul>
-
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2022/09/07/SQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B03%E2%80%94%E2%80%94%E8%A1%8C%E5%88%97%E6%80%A7%E8%B4%A8/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
 
 
 
 
-  
-    <article id="post-SQL学习笔记1——SQL基础" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="SQL学习笔记1——SQL基础"><a href="#SQL学习笔记1——SQL基础" class="headerlink" title="SQL学习笔记1——SQL基础"></a>SQL学习笔记1——SQL基础</h1><h2 id="1、SQL语言的分类"><a href="#1、SQL语言的分类" class="headerlink" title="1、SQL语言的分类"></a>1、SQL语言的分类</h2><ul>
-<li>DDL 定义语言</li>
-<li>DML 操作语言</li>
-<li>DCL 控制语言</li>
-<li>DQL 查询语言</li>
-</ul>
-<h2 id="2、SQL语言的符号"><a href="#2、SQL语言的符号" class="headerlink" title="2、SQL语言的符号"></a>2、SQL语言的符号</h2><ul>
-<li><p><strong>SELECT 子句</strong></p>
-<p>​	SELECT关键字：是用于SQL查询：</p>
-<p>​	SELECT * 表示查询所有列； SELECT col表示查询col列，SELECT DISTINCT col表示返回col列不重复的元素</p>
-</li>
-<li><p><strong>FROM 子句</strong></p>
-<p>​	FROM关键字：是用于选择表</p>
-</li>
-<li><p><strong>WHERE 子句</strong></p>
-<p>​	WHERE子句：用于筛选数据</p>
-</li>
-<li><p><strong>ORDER BY 子句</strong></p>
-<p>​	ORDER BY子句用于按列排序输出，其中排序列不一定要是SELECT子句中选中的列，可以是任意列</p>
-</li>
-<li><p><strong>LIMIT 子句</strong></p>
-<p>​	LIMIT子句用于限制返回的记录数量</p>
-<p>​	LIMIT t :表示返回前t条记录</p>
-<p>​	LIMIT a,b :a为偏移量，b为返回记录数,表示返回第a条后（不包含a），b条记录</p>
-</li>
-<li><p><strong>AND、OR、NOT 运算符</strong></p>
-<p>​	AND运算符 表示：两侧条件同时成立</p>
-<p>​	OR运算符 表示：两侧条件最少有一条成立</p>
-<p>​	NOT运算符 表示：否定后面的条件</p>
-</li>
-<li><p><strong>IN 运算符</strong></p>
-<p>​	IN运算符 表示：IN （A，B）表示A OR B</p>
-</li>
-<li><p><strong>BETWEEN 运算符</strong></p>
-<p>​	BETWEEN A AND B 表示在A-B之间</p>
-</li>
-<li><p><strong>LIKE 运算符</strong></p>
-<p>​	LIKE运算符 表示模糊匹配： LIKE ‘%B’   其中%表示任意一个字符，_表示1个字符</p>
-</li>
-<li><p><strong>REGEXP 运算符</strong></p>
-<p>​	REGEXP运算符 表示正则表达式 REGEXP ‘A’</p>
-<p>​	A   ^:beginning；$:end;|:OR;[abcd]e</p>
-</li>
-<li><p><strong>IS NULL 运算符</strong></p>
-<p>​	IS NULL运算符 表示判断是否为空值</p>
-</li>
-</ul>
-<h2 id="3、SQL语句的顺序"><a href="#3、SQL语句的顺序" class="headerlink" title="3、SQL语句的顺序"></a>3、SQL语句的顺序</h2><ol>
-<li>SELECT</li>
-<li>FROM</li>
-<li>WHERE(optional)</li>
-<li>ORDER BY(optional)</li>
-<li>LIMIT(optional)</li>
-</ol>
-<p><strong>注：顺序出错，SQL查询会报错</strong></p>
-
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2022/09/07/SQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01%E2%80%94%E2%80%94SQL%E5%9F%BA%E7%A1%80/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
 
 
 
 
-  
-    <article id="post-一、NLP基础" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="一、NLP基础"><a href="#一、NLP基础" class="headerlink" title="一、NLP基础"></a>一、NLP基础</h1><h2 id="1、NLP的一些基础底层任务有哪些？"><a href="#1、NLP的一些基础底层任务有哪些？" class="headerlink" title="1、NLP的一些基础底层任务有哪些？"></a>1、NLP的一些基础底层任务有哪些？</h2><ul>
-<li>词性标注（Pos Tagging） Pos ：part of speech</li>
-<li>命名实体识别（Named Entities recognition）</li>
-<li>共指消解(Co-Reference)</li>
-<li>依存句法分析(Basic Dependences)</li>
-</ul>
-<h2 id="2、NLP的常见任务应用"><a href="#2、NLP的常见任务应用" class="headerlink" title="2、NLP的常见任务应用"></a>2、NLP的常见任务应用</h2><ul>
-<li>搜索引擎（Search Engine）</li>
-<li>知识图谱(Knowledge Graph) 非结构化文本——&gt;结构化知识（三元组）</li>
-<li>自动问答（Question Answer）</li>
-<li>语音助手(Personal Assistant)</li>
-<li>机器翻译(Machine translation)</li>
-<li>情感分析(Sentiment Analysis)</li>
-<li>文本分类(Text Classification)</li>
-</ul>
-<h2 id="3、NLP的两个基本问题（构成NLP的底层逻辑）"><a href="#3、NLP的两个基本问题（构成NLP的底层逻辑）" class="headerlink" title="3、NLP的两个基本问题（构成NLP的底层逻辑）"></a>3、NLP的两个基本问题（构成NLP的底层逻辑）</h2><h3 id="两个基本问题"><a href="#两个基本问题" class="headerlink" title="两个基本问题"></a>两个基本问题</h3><ul>
-<li><p><strong>词的表示（Word Repesentation）</strong></p>
-<ul>
-<li><p><strong>目标</strong>：</p>
-<ul>
-<li><p>计算词的相似度</p>
-</li>
-<li><p>发现词间关系</p>
-</li>
-</ul>
-</li>
-<li><p><strong>常见表示方法</strong>：</p>
-<ul>
-<li><p>用一组相关词表示(词表)</p>
-</li>
-<li><p>独热表示(One Hot)</p>
-</li>
-<li><p>上下文词频表示(Co-Occurence Counts)</p>
-</li>
-<li><p>Word Embedding(typical：Word2Vec)</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><strong>语言模型（Language Model）</strong></p>
-<ul>
-<li><p><strong>目标</strong>：</p>
-<ul>
-<li><p>计算已经生成的序列成为一句话的概率（Joint Probability）：联合概率</p>
-</li>
-<li><p>通过前面说过的话，预测下一个词是什么的能力，即可能出现词的概率分布（Conditional Probability）：生成概率</p>
-</li>
-</ul>
-</li>
-<li><p><strong>常见语言模型</strong>：</p>
-<ul>
-<li><p>N-gram（基于马尔可夫假设）</p>
-<p>​	如2-gram即目标词只与前一个词有关，通过极大似然估计思想，统计频率模拟概率</p>
-</li>
-<li><p>Neural Language Model 如CBOW，skip-gram</p>
-<p>​	神经网络语言模型的代表</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="自然语言处理：词的表示-语言模型"><a href="#自然语言处理：词的表示-语言模型" class="headerlink" title="自然语言处理：词的表示+语言模型"></a>自然语言处理：词的表示+语言模型</h3>
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2022/09/07/%E4%B8%80%E3%80%81NLP%E5%9F%BA%E7%A1%80/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-三、NNs基础" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="三、NNs基础"><a href="#三、NNs基础" class="headerlink" title="三、NNs基础"></a>三、NNs基础</h1><h2 id="1、神经网络的基本组成元素"><a href="#1、神经网络的基本组成元素" class="headerlink" title="1、神经网络的基本组成元素"></a>1、神经网络的基本组成元素</h2><ul>
-<li><p><strong>神经元(Neuron)</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">	node((X1))--&gt;node4</span><br><span class="line">	node1((X2))--&gt;node4</span><br><span class="line">	node2((X3))--&gt;node4</span><br><span class="line">	node3((X4))--&gt;node4</span><br><span class="line">	node4((Neural))--&gt;激活函数f--&gt;output</span><br><span class="line">	</span><br></pre></td></tr></table></figure>
-
-<p>$$<br>h_\omega,_b(x) &#x3D; f(\mathbf{\omega}^\mathrm{T}x+b)<br>$$</p>
-</li>
-<li><p><strong>非线性激活函数</strong></p>
-<ul>
-<li><p>Sigmoid </p>
-<img src="C:\Users\刘志远\AppData\Roaming\Typora\typora-user-images\image-20220903163303503.png" alt="image-20220903163303503" style="zoom:50%;" />
-</li>
-<li><p>Tanh</p>
-<img src="C:\Users\刘志远\AppData\Roaming\Typora\typora-user-images\image-20220903165003501.png" alt="image-20220903165003501" style="zoom:50%;" />
-</li>
-<li><p>ReLU</p>
-<img src="C:\Users\刘志远\AppData\Roaming\Typora\typora-user-images\image-20220903163504143.png" alt="image-20220903163504143" style="zoom:50%;" /></li>
-</ul>
-</li>
-<li><p><strong>神经网络结构</strong></p>
-</li>
-</ul>
-
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2022/09/07/%E4%B8%89%E3%80%81NNs%E5%9F%BA%E7%A1%80/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-二、BM基础" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="二、BM基础"><a href="#二、BM基础" class="headerlink" title="二、BM基础"></a>二、BM基础</h1><h2 id="BM-Work的范式"><a href="#BM-Work的范式" class="headerlink" title="BM Work的范式"></a>BM Work的范式</h2><h3 id="预训练-微调范式"><a href="#预训练-微调范式" class="headerlink" title="预训练-微调范式"></a>预训练-微调范式</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">	A(large scale Unlabeled data)----&gt;B(Task specific training data)----&gt;C(Final data)</span><br><span class="line">	D(Model Pre-training)----&gt;E(Model Fine-tuning)----&gt;F(Final Model)</span><br><span class="line">	G(大量通用知识)----&gt;H(针对特定任务微调参数保留的相关知识)----&gt;I(下游任务数据解决实际问题的知识)</span><br></pre></td></tr></table></figure>
-
-<h3 id="上：数据流"><a href="#上：数据流" class="headerlink" title="上：数据流"></a>上：数据流</h3><h3 id="中：任务流"><a href="#中：任务流" class="headerlink" title="中：任务流"></a>中：任务流</h3><h3 id="下：知识流"><a href="#下：知识流" class="headerlink" title="下：知识流"></a>下：知识流</h3>
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2022/09/07/%E4%BA%8C%E3%80%81BM%E5%9F%BA%E7%A1%80/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
 
 
           </div>
@@ -712,8 +339,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
