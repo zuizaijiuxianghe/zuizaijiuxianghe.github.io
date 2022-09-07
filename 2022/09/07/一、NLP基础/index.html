@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://zuizaijiuxianghe.github.io">
-  <title>Archives: 2022/9 | blue</title>
+  <title>blue</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta property="og:type" content="website">
+  <meta name="description" content="一、NLP基础1、NLP的一些基础底层任务有哪些？ 词性标注（Pos Tagging） Pos ：part of speech 命名实体识别（Named Entities recognition） 共指消解(Co-Reference) 依存句法分析(Basic Dependences)  2、NLP的常见任务应用 搜索引擎（Search Engine） 知识图谱(Knowledge Graph)">
+<meta property="og:type" content="article">
 <meta property="og:title" content="blue">
-<meta property="og:url" content="https://zuizaijiuxianghe.github.io/archives/2022/09/index.html">
+<meta property="og:url" content="https://zuizaijiuxianghe.github.io/2022/09/07/%E4%B8%80%E3%80%81NLP%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="blue">
+<meta property="og:description" content="一、NLP基础1、NLP的一些基础底层任务有哪些？ 词性标注（Pos Tagging） Pos ：part of speech 命名实体识别（Named Entities recognition） 共指消解(Co-Reference) 依存句法分析(Basic Dependences)  2、NLP的常见任务应用 搜索引擎（Search Engine） 知识图谱(Knowledge Graph)">
 <meta property="og:locale">
+<meta property="article:published_time" content="2022-09-07T00:22:48.476Z">
+<meta property="article:modified_time" content="2022-09-04T07:44:51.938Z">
 <meta property="article:author" content="醉在九乡河">
 <meta name="twitter:card" content="summary">
   
@@ -159,94 +163,154 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-一、NLP基础" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+  <div class="article-entry" itemprop="articleBody">
     
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
-        </div>
-        <div class="archives">
+    <h1 id="一、NLP基础"><a href="#一、NLP基础" class="headerlink" title="一、NLP基础"></a>一、NLP基础</h1><h2 id="1、NLP的一些基础底层任务有哪些？"><a href="#1、NLP的一些基础底层任务有哪些？" class="headerlink" title="1、NLP的一些基础底层任务有哪些？"></a>1、NLP的一些基础底层任务有哪些？</h2><ul>
+<li>词性标注（Pos Tagging） Pos ：part of speech</li>
+<li>命名实体识别（Named Entities recognition）</li>
+<li>共指消解(Co-Reference)</li>
+<li>依存句法分析(Basic Dependences)</li>
+</ul>
+<h2 id="2、NLP的常见任务应用"><a href="#2、NLP的常见任务应用" class="headerlink" title="2、NLP的常见任务应用"></a>2、NLP的常见任务应用</h2><ul>
+<li>搜索引擎（Search Engine）</li>
+<li>知识图谱(Knowledge Graph) 非结构化文本——&gt;结构化知识（三元组）</li>
+<li>自动问答（Question Answer）</li>
+<li>语音助手(Personal Assistant)</li>
+<li>机器翻译(Machine translation)</li>
+<li>情感分析(Sentiment Analysis)</li>
+<li>文本分类(Text Classification)</li>
+</ul>
+<h2 id="3、NLP的两个基本问题（构成NLP的底层逻辑）"><a href="#3、NLP的两个基本问题（构成NLP的底层逻辑）" class="headerlink" title="3、NLP的两个基本问题（构成NLP的底层逻辑）"></a>3、NLP的两个基本问题（构成NLP的底层逻辑）</h2><h3 id="两个基本问题"><a href="#两个基本问题" class="headerlink" title="两个基本问题"></a>两个基本问题</h3><ul>
+<li><p><strong>词的表示（Word Repesentation）</strong></p>
+<ul>
+<li><p><strong>目标</strong>：</p>
+<ul>
+<li><p>计算词的相似度</p>
+</li>
+<li><p>发现词间关系</p>
+</li>
+</ul>
+</li>
+<li><p><strong>常见表示方法</strong>：</p>
+<ul>
+<li><p>用一组相关词表示(词表)</p>
+</li>
+<li><p>独热表示(One Hot)</p>
+</li>
+<li><p>上下文词频表示(Co-Occurence Counts)</p>
+</li>
+<li><p>Word Embedding(typical：Word2Vec)</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>语言模型（Language Model）</strong></p>
+<ul>
+<li><p><strong>目标</strong>：</p>
+<ul>
+<li><p>计算已经生成的序列成为一句话的概率（Joint Probability）：联合概率</p>
+</li>
+<li><p>通过前面说过的话，预测下一个词是什么的能力，即可能出现词的概率分布（Conditional Probability）：生成概率</p>
+</li>
+</ul>
+</li>
+<li><p><strong>常见语言模型</strong>：</p>
+<ul>
+<li><p>N-gram（基于马尔可夫假设）</p>
+<p>​	如2-gram即目标词只与前一个词有关，通过极大似然估计思想，统计频率模拟概率</p>
+</li>
+<li><p>Neural Language Model 如CBOW，skip-gram</p>
+<p>​	神经网络语言模型的代表</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="自然语言处理：词的表示-语言模型"><a href="#自然语言处理：词的表示-语言模型" class="headerlink" title="自然语言处理：词的表示+语言模型"></a>自然语言处理：词的表示+语言模型</h3>
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2022/09/07/%E4%B8%80%E3%80%81NLP%E5%9F%BA%E7%A1%80/" class="archive-article-date">
-        <time datetime="2022-09-07T00:22:48.476Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-09-07</time>
-</a>
 
-        </div>
-    	 
+    
 
-        <div class="article-info info-on-right">
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          醉在九乡河
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="https://zuizaijiuxianghe.github.io/2022/09/07/一、NLP基础/" title="" target="_blank">https://zuizaijiuxianghe.github.io/2022/09/07/一、NLP基础/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
           
-          
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+    
+
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2022/09/07/%E4%B8%89%E3%80%81NNs%E5%9F%BA%E7%A1%80/" class="archive-article-date">
-        <time datetime="2022-09-07T00:22:48.472Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-09-07</time>
-</a>
 
+
+<nav id="article-nav">
+  
+  
+    <a href="/2022/09/07/%E4%B8%89%E3%80%81NNs%E5%9F%BA%E7%A1%80/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2022/09/07/%E4%BA%8C%E3%80%81BM%E5%9F%BA%E7%A1%80/" class="archive-article-date">
-        <time datetime="2022-09-07T00:22:48.462Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-09-07</time>
-</a>
 
-        </div>
-    	 
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
-    
+
+
+
+
+
+
 
 
           </div>
@@ -287,8 +351,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
